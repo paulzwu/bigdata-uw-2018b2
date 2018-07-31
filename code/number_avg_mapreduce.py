@@ -6,7 +6,7 @@ By Paul Wu uwzwu@uw.edu
 from __future__ import print_function
 from util import spark, sc
 
-input = sc.textFile("../data/numbers2.txt")
+input = sc.textFile("../data/numbers.txt")
 
 numbers = input.flatMap(lambda line: line.split('\t'))
 numbers.foreach(print)
