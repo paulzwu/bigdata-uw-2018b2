@@ -1,7 +1,7 @@
 
 
-#Some SQL
-
+# Some SQL
+'''
 >>> df = spark.read.format("json").load("/data/flight-data/json/2015-summary.json")
 
 
@@ -26,3 +26,5 @@ USING JSON OPTIONS (path '/data/flight-data/json/2015-summary.json')
 CREATE TABLE flights (
   DEST_COUNTRY_NAME STRING, ORIGIN_COUNTRY_NAME STRING, count LONG)
 USING JSON OPTIONS (path '/data/flight-data/json/2015-summary.json')
+
+'''
