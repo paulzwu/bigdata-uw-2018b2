@@ -14,16 +14,11 @@ Sample Code:
 ```
 $> git clone https://github.com/paulzwu/bigdata-uw-2018b2.git
 $> cd code
-
-
-
-```
-$> git clone https://github.com/databricks/Spark-The-Definitive-Guide.git
-$> cd Spark-The-DEfinitive-Guide/data
-$> hdfs dfs -put flight_data /data
-
+$> spark-submit sql_1.py
+$> spark-submit sq2_1.py
 
 ```
+
 
 ```
 >>> df = spark.read.format("json").load("/data/flight-data/json/2015-summary.json")
