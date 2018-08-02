@@ -1,12 +1,27 @@
 
 
-# Some SQL
+# About SQL
 
 Prepare Sample Data
 ```
 $> git clone https://github.com/databricks/Spark-The-Definitive-Guide.git
 $> cd Spark-The-DEfinitive-Guide/data
 $> hdfs dfs -put flight_data /data
+
+```
+
+Sample Code:
+```
+$> git clone https://github.com/paulzwu/bigdata-uw-2018b2.git
+$> cd code
+
+
+
+```
+$> git clone https://github.com/databricks/Spark-The-Definitive-Guide.git
+$> cd Spark-The-DEfinitive-Guide/data
+$> hdfs dfs -put flight_data /data
+
 
 ```
 
