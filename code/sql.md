@@ -13,9 +13,19 @@ $> hdfs dfs -put flight_data /data
 Sample Code:
 ```
 $> git clone https://github.com/paulzwu/bigdata-uw-2018b2.git
-$> cd code
+$> cd bigdata-uw-2018b2/code
 $> spark-submit sql_1.py
 $> spark-submit sq2_1.py
+```
+Spark Tool Commands
+
+```
+$#Run spark programs.
+$spark-submit --driver-java-options "-Dlog4j.configuration=https://raw.githubusercontent.com/paulzwu/bigdata-uw-2018b2/master/log4j" sql_1.py
+$spark-submit --driver-java-options "-Dlog4j.configuration=https://raw.githubusercontent.com/paulzwu/bigdata-uw-2018b2/master/log4j" sql_2.py
+$#spark-sql shell
+$spark-sql --driver-java-options "-Dlog4j.configuration=https://raw.githubusercontent.com/paulzwu/bigdata-uw-2018b2/master/log4j"
+
 
 ```
 
